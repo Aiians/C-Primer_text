@@ -2,6 +2,8 @@
 #include <string>
 #include <vector>
 using namespace std;
+using std::string;
+
 
 // Á·Ï°3.6 P86
 //int main()
@@ -184,6 +186,39 @@ using namespace std;
 //	}
 //	for (decltype(Sum_vector.size()) i = 0; i < Sum_vector.size(); ++i)
 //		cout << Sum_vector[i] << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+// Á·Ï°3.22 P99
+//int main()
+//{
+//	
+//	string text("This is an example,"
+//		"in order to write this program, "
+//		"an example of it, in order to achieve "
+//		"the first section are rewritten into "
+//		"uppercase letters, and then output it.");
+//	for (auto it = text.begin(); it != text.end(); ++it)
+//		*it = toupper(*it);
+//	cout << text << endl;
+//	system("pause");
+//	return 0;
+//
+//}
+
+
+// Á·Ï°3.23 P99
+//int main()
+//{
+//	vector<int> text(10, 5);
+//	for (auto it = text.begin(); it != text.end(); ++it)
+//	{
+//		*it = 2 * (*it);
+//		cout << *it << " ";
+//	}
+//	cout << endl;
 //	system("pause");
 //	return 0;
 //}
