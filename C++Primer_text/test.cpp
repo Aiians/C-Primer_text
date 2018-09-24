@@ -222,3 +222,47 @@ using std::string;
 //	system("pause");
 //	return 0;
 //}
+
+
+// 练习3.24 P101
+//int main()
+//{
+//	vector<int> text(4);
+//	for (int i = 0; i < 4; ++i)
+//		cin >> text[i];
+//	for (auto vector_begin = text.begin(), vector_end = text.end(); vector_begin != vector_end; ++vector_begin)
+//	{
+//		--vector_end;
+//		cout << *vector_begin + *vector_end << endl;
+//	}
+//	system("pause");
+//	return 0;
+//
+//}
+
+
+// 练习3.25 P101
+//int main()
+//{
+//	vector<unsigned> scores(11, 0);
+//	unsigned grade;
+//	while (cin >> grade)
+//	{
+//		auto it = scores.begin();
+//		unsigned n = grade / 10;
+//		it += n;
+//		++(*it);
+//	}
+//	for (decltype(scores.size()) i = 0; i < scores.size() - 1; ++i)
+//	{
+//		cout << i * 10 << "~" << i * 10 + 9 << "\t"
+//			<< scores[i] << endl;
+//	}
+//	cout << 100 << "\t" << scores[10] << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+// 练习3.26 P101
+//因为end指的是最后一个元素的后一个位置！！！
