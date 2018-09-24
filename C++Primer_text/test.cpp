@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 using std::string;
+using std::vector;
 
 
 // 练习3.6 P86
@@ -266,3 +267,111 @@ using std::string;
 
 // 练习3.26 P101
 //因为end指的是最后一个元素的后一个位置！！！
+
+
+// 练习3.27 P103
+//（a） 非法，buf_size 不是常量表达式。
+//（b） 合法。
+//（c） 当txt_size()是constexpr时正确；否则错误。
+//（d） 错误：没有可存放空字符。
+
+
+// 练习3.28 P103
+//sa数组为空（null）。
+//ia数组含有10个整数，皆为0.
+//sa2数组的值是未定义的
+//ia2数组含有10个整数。值未定义。
+//
+//全局变量被初始化为null或0.
+//局部变量的值是未定义的。
+
+
+// 练习3.29 P103
+//相对于vector来说：
+//（1） 数组的初始化不灵活（必须提供一个常量表达式）
+//（2） 数组的容量无法动态改变
+
+
+// 练习3.30 P104
+//访问非法内存区域，ia[10]未定义。数组大小是10，索引应该为0~9.
+
+
+// 练习3.31 P104
+//int main()
+//{
+//	int arr[10];
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		arr[i] = i;
+//		cout << "arr[" << i << "]" << " = " << arr[i] << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 练习3.32 P104
+//int main()
+//{
+//	int arr[10];
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		arr[i] = i;
+//		cout << "arr[" << i << "]" << " = " << arr[i] << endl;
+//	}
+//	int arr2[10];
+//	for (int i = 0; i < 10; ++i)
+//	{
+//		arr2[i] = arr[i];
+//		cout << "arr2[" << i << "]" << " = " << arr2[i] << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// vector版
+//int main()
+//{
+//	vector<int> ivec;
+//	for (int i = 0; i < 10; ++i)
+//		ivec.push_back(i);
+//	vector<int> ivec2;
+//	ivec2 = ivec;
+//	for (auto i : ivec)
+//		cout << "ivec[" << i << "]" << "=" << ivec[i] << endl;
+//	for (auto i : ivec2)
+//		cout << "ivec2[" << i << "]" << "=" << ivec2[i] << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+// 练习3.33 P104
+//int main()
+//{
+//	unsigned scores[11];
+//	unsigned grade;
+//	while (cin >> grade) {
+//		if (grade <= 100) {
+//			++scores[grade / 10];
+//		}
+//	}
+//	for (auto x : scores) {
+//		std::cout << x << std::endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 运行结果
+//D:\labs > prog1
+//	3
+//	5
+//	^ Z
+//	4199104
+//	4200976
+//	6422296
+//	1983763024
+//	4294967294
