@@ -375,3 +375,64 @@ using std::vector;
 //	6422296
 //	1983763024
 //	4294967294
+
+
+
+// 练习3.34 P108
+//p1 += p2 - p1
+//功能是使p1指向目前所指元素的后第p2 - p1个元素。只有当p1是常量指针时才非法。
+
+
+// 练习3.35 P108
+//int main()
+//{
+//	constexpr size_t i = 5;
+//	int arr[i] = { 1,2,3,4,5 };
+//	for (int *p = begin(arr); p != begin(arr) + i; ++p)
+//		*p = 0;
+//	for (auto i : arr)
+//		cout << "arr[" << i << "]" << "=" << arr[i] << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+// 练习3.36 P108
+//int main()
+//{
+//	unsigned p = 0, q = 0;
+//	constexpr size_t i = 5;
+//	int arr[i] = { 1,2,3,4,5 }, arr2[i] = { 2,3,4,5,6 };
+//	if (sizeof(arr) == sizeof(arr2))
+//		for (size_t t = 0; t != i; ++t)
+//			if (arr[t] == arr2[t])
+//				++p;
+//			else
+//				p = 0;
+//	else
+//		cout << "arrays are not equal!" << endl;
+//	if (p == i)
+//		cout << "arrays are equal!" << endl;
+//	else
+//		cout << "arrays are not equal!" << endl;
+//
+//	vector<int> p1{ 1,2,3,4,5 }, p2{ 2,3,4,5,6 };
+//	if (p1.size() != p2.size())
+//		cout << "vectors are not equal!" << endl;
+//	else
+//	{
+//		auto ip1 = p1.begin(), ip2 = p2.begin();
+//		for (decltype(p1.size()) i = 0; i != p1.size(); ++i)
+//		{
+//			if (*(ip1++) != *(ip2++))
+//				++q;
+//		}
+//
+//	}
+//	if (q != 0)
+//		cout << "vectors are not equal!" << endl;
+//	else
+//		cout << "vectors are equal!" << endl;
+//	system("pause");
+//	return 0;
+//}
