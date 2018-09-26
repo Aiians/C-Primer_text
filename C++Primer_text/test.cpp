@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <cstring>
 using namespace std;
 using std::string;
 using std::vector;
@@ -433,6 +434,65 @@ using std::vector;
 //		cout << "vectors are not equal!" << endl;
 //	else
 //		cout << "vectors are equal!" << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习3.37 P110
+//int main()
+//{
+//	const char ca[] = { 'h','e','l','l','o' };
+//	const char *cp = ca;
+//	while (*cp)
+//	{
+//		cout << *cp << endl;
+//		++cp;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+// 输出结果由于ca是C风格字符串，但没字符串没有跟着空字符（'\0'），所以会输出 hello后指针辉沿着
+// ca在内存中的位置不断向前寻找，直到遇到空字符才停下来。
+
+
+// 练习3.38 P110
+//指针指代的是对象的地址，相加是地址相加，难以区分到底什么意义。
+
+
+// 练习3.39 P110
+//int main()
+//{
+//	string s1 = "string-A", s2 = "string-B";
+//	cout << "The big string is:";
+//	if (s1 < s2)
+//		cout << s2 << endl;
+//	else
+//		cout << s1 << endl;
+//
+//
+//	const char ca1[] = "ca-A", ca2[] = "ca-B";
+//	cout << "The big C-style character string is:";
+//	if (strcmp(ca1, ca2) < 0)
+//		cout << "ca-B" << endl;
+//	else
+//		cout << "ca-A" << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习3.40 P110
+//int main()
+//{
+//	char ca[20] = "stringA", ca2[20] = "stringB";
+//	strcat(ca, ca2);
+//	char ca3[20];
+//	strcpy(ca3, ca);
+//	cout << ca3 << endl;
 //	system("pause");
 //	return 0;
 //}
