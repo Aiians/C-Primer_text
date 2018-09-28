@@ -496,3 +496,32 @@ using std::vector;
 //	system("pause");
 //	return 0;
 //}
+
+
+
+// Á·Ï°3.41 P112
+//int main()
+//{
+//	int a[] = { 0,1,2,3,4,5 };
+//	vector<int> ivec(begin(a), end(a));
+//	for (auto i : ivec)
+//		cout << "ivec[" << i << "]" << "=" << ivec[i] << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// Á·Ï°3.42 P112
+//int main()
+//{
+//	vector<int> ivec(10, 1);
+//	int a[10] = {};
+//	for (auto i : ivec)
+//	{
+//		a[i] = ivec[i];
+//		cout << "a[" << i << "]" << "=" << a[i] << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
