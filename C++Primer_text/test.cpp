@@ -525,3 +525,153 @@ using std::vector;
 //	system("pause");
 //	return 0;
 //}
+
+
+
+// 练习3.43 P116
+// 版本1，范围for
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int(&row)[colCnt] : ia)
+//	{
+//		for (int col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 版本2，普通for + 下标运算符
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (size_t i = 0; i != rowCnt; ++i)
+//	{
+//		for (size_t j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 版本3，普通for + 指针
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int(*p)[colCnt] = begin(ia); p != end(ia); ++p)
+//	{
+//		for (int *q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习3.44 P116
+//constexpr size_t rowCnt = 3, colCnt = 4;
+//using int_array = int[colCnt];
+
+// 范围for
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int_array &row : ia)
+//	{
+//		for (int col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 普通for + 下标运算符
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (size_t i = 0; i != rowCnt; ++i)
+//	{
+//		for (size_t j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 普通for + 指针
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int_array *p = begin(ia); p != end(ia); ++p)
+//	{
+//		for (int *q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习3.45 P116
+// 版本1，范围for
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto &row : ia)
+//	{
+//		for (auto col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 版本2，普通for + 下标运算符
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto i = 0; i != rowCnt; ++i)
+//	{
+//		for (auto j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// 版本3，普通for + 指针
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto p = begin(ia); p != end(ia); ++p)
+//	{
+//		for (auto q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
