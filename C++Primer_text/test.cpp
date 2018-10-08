@@ -499,10 +499,179 @@ using std::vector;
 
 
 
+// Á·Ï°3.41 P112
+//int main()
+//{
+//	int a[] = { 0,1,2,3,4,5 };
+//	vector<int> ivec(begin(a), end(a));
+//	for (auto i : ivec)
+//		cout << "ivec[" << i << "]" << "=" << ivec[i] << endl;
+//	system("pause");
+//	return 0;
+//}
 
-// Á·Ï°4.1 P123
-// ÖµÎª105
 
 
-// Á·Ï°4.2 P123
-// (a) *(vec.begin())   (b) *(vec.begin() + 1)
+// Á·Ï°3.42 P112
+//int main()
+//{
+//	vector<int> ivec(10, 1);
+//	int a[10] = {};
+//	for (auto i : ivec)
+//	{
+//		a[i] = ivec[i];
+//		cout << "a[" << i << "]" << "=" << a[i] << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// Á·Ï°3.43 P116
+// °æ±¾1£¬·¶Î§for
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int(&row)[colCnt] : ia)
+//	{
+//		for (int col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// °æ±¾2£¬ÆÕÍ¨for + ÏÂ±êÔËËã·û
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (size_t i = 0; i != rowCnt; ++i)
+//	{
+//		for (size_t j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// °æ±¾3£¬ÆÕÍ¨for + Ö¸Õë
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int(*p)[colCnt] = begin(ia); p != end(ia); ++p)
+//	{
+//		for (int *q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// Á·Ï°3.44 P116
+//constexpr size_t rowCnt = 3, colCnt = 4;
+//using int_array = int[colCnt];
+
+// ·¶Î§for
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int_array &row : ia)
+//	{
+//		for (int col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// ÆÕÍ¨for + ÏÂ±êÔËËã·û
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (size_t i = 0; i != rowCnt; ++i)
+//	{
+//		for (size_t j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// ÆÕÍ¨for + Ö¸Õë
+//int main()
+//{
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (int_array *p = begin(ia); p != end(ia); ++p)
+//	{
+//		for (int *q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// Á·Ï°3.45 P116
+// °æ±¾1£¬·¶Î§for
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto &row : ia)
+//	{
+//		for (auto col : row)
+//			cout << col << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// °æ±¾2£¬ÆÕÍ¨for + ÏÂ±êÔËËã·û
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto i = 0; i != rowCnt; ++i)
+//	{
+//		for (auto j = 0; j != colCnt; ++j)
+//			cout << ia[i][j] << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+
+// °æ±¾3£¬ÆÕÍ¨for + Ö¸Õë
+//int main()
+//{
+//	constexpr size_t rowCnt = 3, colCnt = 4;
+//	int ia[rowCnt][colCnt] = { { 0 }, { 1 }, { 2 } };
+//	for (auto p = begin(ia); p != end(ia); ++p)
+//	{
+//		for (auto q = begin(*p); q != end(*p); ++q)
+//			cout << *q << " ";
+//		cout << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
