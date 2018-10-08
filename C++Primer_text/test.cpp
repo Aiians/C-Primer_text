@@ -496,3 +496,13 @@ using std::vector;
 //	system("pause");
 //	return 0;
 //}
+
+
+
+
+// Á·Ï°4.1 P123
+// ÖµÎª105
+
+
+// Á·Ï°4.2 P123
+// (a) *(vec.begin())   (b) *(vec.begin() + 1)
