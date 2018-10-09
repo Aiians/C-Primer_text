@@ -684,3 +684,67 @@ using std::vector;
 
 // Á·Ï°4.2 P123
 // (a) *(vec.begin())   (b) *(vec.begin() + 1)
+
+
+
+// Á·Ï°4.4 P126
+//int main()
+//{
+//	int i = 12 / 3 * 4 + 5 * 15 + 24 % 4 / 2;
+//	cout << i << endl;
+//	system("pause");
+//	return 0;
+//}
+
+//ÖµÎª91
+
+
+
+// Á·Ï°4.5 P126
+//int main()
+//{
+//	int a = -30 * 3 + 21 / 5;
+//	int b = -30 + 3 * 21 / 5;
+//	int c = 30 / 3 * 21 % 5;
+//	int d = -30 / 3 * 21 % 4;
+//	cout << a << " " << b << " "
+//		<< c << " " << d << endl;
+//	system("pause");
+//	return 0;
+//}
+//
+//-86 - 18 0 - 2
+
+
+
+// Á·Ï°4.6 P126
+//int main()
+//{
+//	int i = 0;
+//	while (cin >> i)
+//		if (i % 2)
+//			cout << "ÆæÊý" << endl;
+//		else
+//			cout << "Å¼Êý" << endl;
+//	system("pause");
+//	return 0;
+// }
+
+
+
+// Á·Ï°4.7 P126
+//int main()
+//{
+//	short value = 32767;
+//	++value;
+//	unsigned short value2 = 0;
+//	--value2;
+//	unsigned short value3 = 65535;
+//	++value3;
+//	cout << value << " " << value2
+//		<< " " << value3 << endl;
+//	system("pause");
+//	return 0;
+//}
+//
+//-32768 65535 0
