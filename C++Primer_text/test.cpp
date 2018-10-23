@@ -838,6 +838,88 @@ using std::vector;
 
 
 
+// 练习4.21 P135
+//int main()
+//{
+//	int a[] = { 0, 1, 2, 3, 4, 5 };
+//	vector<int> ivec(begin(a), end(a));
+//	cout << "Origin vector" << endl;
+//	for (auto i : ivec)
+//		cout << ivec[i] << " ";
+//	cout << endl;
+//	cout << "After change" << endl;
+//	for (auto i : ivec)
+//		cout << ((ivec[i] % 2) ? ivec[i] * 2 : ivec[i]) << " ";
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习4.22 P135
+//int main()
+//{
+//	int grade = 0;
+//	cout << "Please input grade" << endl;
+//	cin >> grade;
+//	cout << ((grade > 90) ? "high pass"
+//		: (grade > 75) ? "pass"
+//		: (grade >= 60) ? "low pass" : "fail");
+//	cout << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+//if版本
+
+//int main()
+//{
+//	int grade;
+//	cout << "Please Input the grade :";
+//	cin >> grade;
+//	if (grade <= 90)
+//	{
+//		if (grade <= 75)
+//		{
+//			if (grade > 60)
+//			{
+//				cout << "low pass" << endl;
+//			}
+//			else
+//			{
+//				cout << "fail" << endl;
+//			}
+//		}
+//		else
+//		{
+//			cout << "pass" << endl;
+//		}
+//	}
+//	else
+//	{
+//		cout << "High pass" << endl;
+//	}
+//	system("pause");
+//	return 0;
+//}
+
+//if语句虽然较为直观，但是不够简洁，而条件运算符的嵌套次数如果过多，则会影响到代码的可读性
+
+
+
+// 练习4.23 P135
+//此处即为条件运算符的优先级过低引起的问题
+//改为
+//string pl = s + (s[s.size() - 1] == 's' ? "" : "s");
+
+
+// 练习4.24 P135
+//将会引起矛盾
+
+
+
 // 练习4.25 P139
 //~'q' << 6
 //'q'char  8位转换成int 32位
