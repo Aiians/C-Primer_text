@@ -949,3 +949,50 @@ using std::vector;
 //	结果为true
 //（d） ul1 || ul2
 //	结果为true
+
+
+
+// 练习4.28 P140
+//int main()
+//{
+//	cout << sizeof(int) << endl;
+//	cout << sizeof(short) << endl;
+//	cout << sizeof(long) << endl;
+//	cout << sizeof(char) << endl;
+//	cout << sizeof(float) << endl;
+//	cout << sizeof(double) << endl;
+//	cout << sizeof(size_t) << endl;
+//	system("pause");
+//	return 0;
+//}
+
+
+
+// 练习4.29 P140
+//int main()
+//{
+//	int x[10];
+//	int *p = x;
+//	cout << sizeof(x) << " " << sizeof(*x) << endl;
+//	cout << sizeof(x) / sizeof(*x) << endl;
+//	cout << sizeof(p) << " " << sizeof(*p) << endl;
+//	cout << sizeof(p) / sizeof(*p) << endl;      // 64位系统，指针本身所占空间为8字节
+//	system("pause");
+//	return 0;
+//}
+//
+//40 4
+//10
+//8 4
+//2
+
+
+
+// 练习4.30 P140
+//(a)(sizeof x) + y
+//
+//(b)  sizeof(p->mem[i])
+//
+//(c)(sizeof a) < b
+//
+//(d)  无需改变。
