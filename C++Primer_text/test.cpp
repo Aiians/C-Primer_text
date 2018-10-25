@@ -996,3 +996,22 @@ using std::vector;
 //(c)(sizeof a) < b
 //
 //(d)  无需改变。
+
+
+
+
+// 练习4.31 P141
+//仅在需要时使用后置版本，是个习惯问题。
+//for (vector<int> ::size_type ix = 0;
+//	ix != ivec.size(); ix++, cnt--)
+//	ivec[ix] = cnt;
+
+
+
+// 练习4.32 P141
+//ptr和ix有相同功能。前者使用指针后者使用数组的维度来遍历这个数组。
+
+
+// 练习4.33 P141
+//如果someValue为真，则++x，返回结果为++y；
+//             为假，则--x，返回结果为--y。
