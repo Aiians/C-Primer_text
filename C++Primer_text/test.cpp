@@ -1015,3 +1015,37 @@ using std::vector;
 // 练习4.33 P141
 //如果someValue为真，则++x，返回结果为++y；
 //             为假，则--x，返回结果为--y。
+
+
+
+// 练习4.34 P143
+//（a） if (fval) //fval转换成bool类型
+//（b） dval = fval + ival;  // ival转换成float类型，然后fval + ival 转换成double类型
+//（c） dval + ival * cval;   // cval转换成int类型，然后ival 和 cval转换成double类型
+
+
+
+// 练习4.35 P143
+//（a） cval = 'a' + 3;   // 'a'转换成int类型，然后('a' + 3)(int)转换成char类型
+//（b） fval = ui - ival * 1.0;  // ival和ui转换成double类型，然后double转换成float类型
+//（c） dval = ui * fval;  // ui转换成float类型，然后float类型转换成double类型
+//（d） cval = ival + fval + dval;  // ival转换成float类型，然后float和 fval转换成double类型，最后double转换成char类型
+
+
+// 练习4.36 P147
+//i *= static_cast<int>(d);
+
+
+// 练习4.37 P147
+//int i; double d; const string *ps; char *pc; void *pv;
+//（a） pv = (void*)ps;  // pv = const_cast<string*>(ps); 或 pv = static_cast<void*>(const_cast<string*>(ps))
+//（b） i = int(*pc);   // i = static_cast<int>(*pc)
+//（c） pv = &d;    // pv = static_cast<void*>(&d)
+//（d） pc = (char*)pv;    // pc = reinterpret_cast<char*>(pv)
+
+
+
+// 练习4.38 P147
+//double slope = static_cast<double>(j / i);  // (j/i)是int类型转换成double类型，在赋值给slope
+
+
